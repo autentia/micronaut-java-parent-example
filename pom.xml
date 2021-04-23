@@ -5,23 +5,39 @@
 
     <!-- The micronaut-java-parent module preconfigure all the version and plugins, so you only need to add it as your parent! -->
     <parent>
-        <groupId>com.autentia</groupId>
+        <groupId>io.archimedesfw.maven.micronaut</groupId>
         <artifactId>micronaut-java-parent</artifactId>
-        <version>2.2.1</version>
+        <version>2.4.2</version>
     </parent>
 
-    <groupId>com.autentia.example.micronaut</groupId>
+    <groupId>io.archimedesfw.maven.micronaut.example</groupId>
     <artifactId>micronaut-java-parent-example</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <properties>
-        <assertj.version>3.18.1</assertj.version>
-        <logback.version>1.2.3</logback.version>
-        <mockito.version>3.6.28</mockito.version>
-        <postgresql.version>42.2.18</postgresql.version>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Java parent example.</description>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>manual</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>alejandropg</id>
+            <name>Alejandro Pérez</name>
+        </developer>
+    </developers>
 
-        <docker-maven-plugin.version>0.34.1</docker-maven-plugin.version>
+    <properties>
+        <assertj.version>3.19.0</assertj.version>
+        <logback.version>1.2.3</logback.version>
+        <mockito.version>3.9.0</mockito.version>
+        <postgresql.version>42.2.20</postgresql.version>
+
+        <docker-maven-plugin.version>0.35.0</docker-maven-plugin.version>
     </properties>
 
     <modules>
