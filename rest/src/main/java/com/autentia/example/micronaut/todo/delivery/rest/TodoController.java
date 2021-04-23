@@ -1,15 +1,18 @@
 package com.autentia.example.micronaut.todo.delivery.rest;
 
-import com.autentia.example.micronaut.todo.Todo;
-import com.autentia.example.micronaut.todo.persistence.TodoRepository;
-import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Get;
-import io.micronaut.spring.tx.annotation.Transactional;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.time.LocalDateTime;
-import java.util.List;
+import com.autentia.example.micronaut.todo.Todo;
+import com.autentia.example.micronaut.todo.persistence.TodoRepository;
+
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
 
 @Controller("/todos")
 class TodoController {
